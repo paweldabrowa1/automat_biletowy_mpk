@@ -1,5 +1,7 @@
 # Automat Biletowy MPK
 
+[GITHUB](https://github.com/paweldabrowa1/automat_biletowy_mpk)
+
 ## Ogólne działanie projektu
 Po uruchomieniu aplikacji pojawia nam się okienko w którym
 dokonujemy wyboru ilości bieltów (wzorowane na to jakie 
@@ -68,20 +70,21 @@ tradycyjny sposób try/catch trzeba nadpisać metodę w głównym okienku aplika
 lambda komendy(w której chciałem łapać error) powinna wykonać się wcześniej niż np. obłożona nią jakaś lambda wewnątrz biblioteki, lub jak to w pythonie działa...
 
 ### 5.2 Linki do fragmentów w kodzie
-#### Lambdy (3)
+#### Lambdy (wymagane 3)
 - [Przyklad 1](https://github.com/paweldabrowa1/automat_biletowy_mpk/blob/675ae319d6ce6e47bd38ba014674715a790c7539/automat_biletowy_mpk/ticket_machine/ticket_machine_ui.py#L214)
 - [Przyklad 2](https://github.com/paweldabrowa1/automat_biletowy_mpk/blob/675ae319d6ce6e47bd38ba014674715a790c7539/automat_biletowy_mpk/ticket_machine/ticket_machine_ui.py#L221)
 - [Przyklad 3](https://github.com/paweldabrowa1/automat_biletowy_mpk/blob/2643cff3d2e244a7c619360dd79428d1b867a0e9/automat_biletowy_mpk/runner.py#L23)
-#### List comprehension (3)
+#### List comprehension (wymagane 3)
 - [Przyklad 1](https://github.com/paweldabrowa1/automat_biletowy_mpk/blob/2643cff3d2e244a7c619360dd79428d1b867a0e9/automat_biletowy_mpk/runner.py#L23)
 - [Przyklad 2](https://github.com/paweldabrowa1/automat_biletowy_mpk/blob/2643cff3d2e244a7c619360dd79428d1b867a0e9/automat_biletowy_mpk/coins/coins.py#L2)
 - [Przyklad 3](https://github.com/paweldabrowa1/automat_biletowy_mpk/blob/2643cff3d2e244a7c619360dd79428d1b867a0e9/automat_biletowy_mpk/tests/automat_biletowy_mpk/main_tests.py#L46)
-#### Klasy (4)
+#### Klasy (wymagane 4)
 - [Przyklad 1](https://github.com/paweldabrowa1/automat_biletowy_mpk/blob/2643cff3d2e244a7c619360dd79428d1b867a0e9/automat_biletowy_mpk/coins/coins.py#L5)
 - [Przyklad 2](https://github.com/paweldabrowa1/automat_biletowy_mpk/blob/2643cff3d2e244a7c619360dd79428d1b867a0e9/automat_biletowy_mpk/coins/coins_holder.py#L12)
 - [Przyklad 3](https://github.com/paweldabrowa1/automat_biletowy_mpk/blob/2643cff3d2e244a7c619360dd79428d1b867a0e9/automat_biletowy_mpk/ticket_machine/ticket.py#L1)
 - [Dziedziczenie 1](https://github.com/paweldabrowa1/automat_biletowy_mpk/blob/2643cff3d2e244a7c619360dd79428d1b867a0e9/automat_biletowy_mpk/ticket_machine/ticket_machine.py#L14)
 - [Dziedziczenie 2](https://github.com/paweldabrowa1/automat_biletowy_mpk/blob/2643cff3d2e244a7c619360dd79428d1b867a0e9/automat_biletowy_mpk/ticket_machine/ticket_machine.py#L48)
+- Logika i UI w pkt. "Moduły"
 #### Wyjątki (Definicja i rzucanie)
 - [Definicja](https://github.com/paweldabrowa1/automat_biletowy_mpk/blob/2643cff3d2e244a7c619360dd79428d1b867a0e9/automat_biletowy_mpk/coins/coins_holder.py#L8)
 - [Wyrzucenie](https://github.com/paweldabrowa1/automat_biletowy_mpk/blob/2643cff3d2e244a7c619360dd79428d1b867a0e9/automat_biletowy_mpk/coins/coins_holder.py#L26)
@@ -89,3 +92,6 @@ lambda komendy(w której chciałem łapać error) powinna wykonać się wcześni
 #### Moduły
 - Logika - każdy plik poza plikiem od tkintera
 - [UI](https://github.com/paweldabrowa1/automat_biletowy_mpk/blob/2643cff3d2e244a7c619360dd79428d1b867a0e9/automat_biletowy_mpk/ticket_machine/ticket_machine_ui.py#L23)
+
+Całość logiki tj. przechowywanie monet płacenie, wydawanie reszty jest rozbita na pomniejsze klasy, jedna klasa od okienek TKintera obsługuje tylko klasy logiki,
+wyświetla np. monety które klasa automata zwróciła itd.
