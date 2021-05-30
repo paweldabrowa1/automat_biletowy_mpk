@@ -71,19 +71,21 @@ lambda komendy(w której chciałem łapać error) powinna wykonać się wcześni
 #### Lambdy (3)
 - [Przyklad 1](https://github.com/paweldabrowa1/automat_biletowy_mpk/blob/675ae319d6ce6e47bd38ba014674715a790c7539/automat_biletowy_mpk/ticket_machine/ticket_machine_ui.py#L214)
 - [Przyklad 2](https://github.com/paweldabrowa1/automat_biletowy_mpk/blob/675ae319d6ce6e47bd38ba014674715a790c7539/automat_biletowy_mpk/ticket_machine/ticket_machine_ui.py#L221)
--
+- [Przyklad 3](https://github.com/paweldabrowa1/automat_biletowy_mpk/blob/2643cff3d2e244a7c619360dd79428d1b867a0e9/automat_biletowy_mpk/runner.py#L23)
 #### List comprehension (3)
--
--
--
+- [Przyklad 1](https://github.com/paweldabrowa1/automat_biletowy_mpk/blob/2643cff3d2e244a7c619360dd79428d1b867a0e9/automat_biletowy_mpk/runner.py#L23)
+- [Przyklad 2](https://github.com/paweldabrowa1/automat_biletowy_mpk/blob/2643cff3d2e244a7c619360dd79428d1b867a0e9/automat_biletowy_mpk/coins/coins.py#L2)
+- [Przyklad 3](https://github.com/paweldabrowa1/automat_biletowy_mpk/blob/2643cff3d2e244a7c619360dd79428d1b867a0e9/automat_biletowy_mpk/tests/automat_biletowy_mpk/main_tests.py#L46)
 #### Klasy (4)
--
--
--
--
+- [Przyklad 1](https://github.com/paweldabrowa1/automat_biletowy_mpk/blob/2643cff3d2e244a7c619360dd79428d1b867a0e9/automat_biletowy_mpk/coins/coins.py#L5)
+- [Przyklad 2](https://github.com/paweldabrowa1/automat_biletowy_mpk/blob/2643cff3d2e244a7c619360dd79428d1b867a0e9/automat_biletowy_mpk/coins/coins_holder.py#L12)
+- [Przyklad 3](https://github.com/paweldabrowa1/automat_biletowy_mpk/blob/2643cff3d2e244a7c619360dd79428d1b867a0e9/automat_biletowy_mpk/ticket_machine/ticket.py#L1)
+- [Dziedziczenie 1](https://github.com/paweldabrowa1/automat_biletowy_mpk/blob/2643cff3d2e244a7c619360dd79428d1b867a0e9/automat_biletowy_mpk/ticket_machine/ticket_machine.py#L14)
+- [Dziedziczenie 2](https://github.com/paweldabrowa1/automat_biletowy_mpk/blob/2643cff3d2e244a7c619360dd79428d1b867a0e9/automat_biletowy_mpk/ticket_machine/ticket_machine.py#L48)
 #### Wyjątki (Definicja i rzucanie)
--
--
+- [Definicja](https://github.com/paweldabrowa1/automat_biletowy_mpk/blob/2643cff3d2e244a7c619360dd79428d1b867a0e9/automat_biletowy_mpk/coins/coins_holder.py#L8)
+- [Wyrzucenie](https://github.com/paweldabrowa1/automat_biletowy_mpk/blob/2643cff3d2e244a7c619360dd79428d1b867a0e9/automat_biletowy_mpk/coins/coins_holder.py#L26)
+- [Łapanie](https://github.com/paweldabrowa1/automat_biletowy_mpk/blob/2643cff3d2e244a7c619360dd79428d1b867a0e9/automat_biletowy_mpk/tests/automat_biletowy_mpk/main_tests.py#L71)
 #### Moduły
--
--
+- Logika - każdy plik poza plikiem od tkintera
+- [UI](https://github.com/paweldabrowa1/automat_biletowy_mpk/blob/2643cff3d2e244a7c619360dd79428d1b867a0e9/automat_biletowy_mpk/ticket_machine/ticket_machine_ui.py#L23)
