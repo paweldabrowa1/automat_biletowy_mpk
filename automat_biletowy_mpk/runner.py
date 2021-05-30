@@ -1,5 +1,5 @@
-from coins import *
-from ticket_machine import *
+from .coins import *
+from .ticket_machine import *
 
 TICKETS_GEN = [
     Ticket(
@@ -15,12 +15,16 @@ TICKETS_GEN = [
     }.items()
 ]
 
-if __name__ == '__main__':
-    ticket_machine = TicketMachine(list(TICKETS_GEN))
-    startup_storage = {(coin, 1) for coin in acceptable_coins()}
-    ticket_machine.append_all(startup_storage)
 
-    TicketMachineUI(
-        ticket_machine,
-        "Automat biletowy MPK"
-    ).mainloop()
+class Runner:
+    def start_app(self):
+        ticket_machine = TicketMachine(list(TICKETS_GEN))
+
+        startup_storage = lambda amount: {(coin, amount) for coin in acceptable_coins()}
+
+        ticket_machine.append_all(startup_storage(1))
+
+        TicketMachineUI(
+            ticket_machine,
+            "Automat biletowy MPK"
+        ).mainloop()

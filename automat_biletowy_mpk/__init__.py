@@ -1,2 +1,2 @@
-from coins import *
-from ticket_machine import *
+from .coins import *
+from .ticket_machine import *

@@ -70,7 +70,7 @@ lambda komendy(w której chciałem łapać error) powinna wykonać się wcześni
 ### 5.2 Linki do fragmentów w kodzie
 #### Lambdy (3)
 - [Przyklad 1](https://github.com/paweldabrowa1/automat_biletowy_mpk/blob/675ae319d6ce6e47bd38ba014674715a790c7539/automat_biletowy_mpk/ticket_machine/ticket_machine_ui.py#L214)
--
+- [Przyklad 2](https://github.com/paweldabrowa1/automat_biletowy_mpk/blob/675ae319d6ce6e47bd38ba014674715a790c7539/automat_biletowy_mpk/ticket_machine/ticket_machine_ui.py#L221)
 -
 #### List comprehension (3)
 -

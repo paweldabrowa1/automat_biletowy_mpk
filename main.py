@@ -1,20 +1,5 @@
-import tkinter as tk
-
-
-def print_hi(name):
-    window = tk.Tk()
-
-    frame1 = tk.Frame(master=window, width=200, height=100, bg="red")
-    frame1.pack(fill=tk.BOTH, side=tk.LEFT, expand=True)
-
-    frame2 = tk.Frame(master=window, width=100, bg="yellow")
-    frame2.pack(fill=tk.BOTH, side=tk.LEFT, expand=True)
-
-    frame3 = tk.Frame(master=window, width=50, bg="blue")
-    frame3.pack(fill=tk.BOTH, side=tk.LEFT, expand=True)
-
-    window.mainloop()
-
+from automat_biletowy_mpk import runner
 
 if __name__ == '__main__':
-# print_hi('PyCharm')
+    r = runner.Runner()
+    r.start_app()

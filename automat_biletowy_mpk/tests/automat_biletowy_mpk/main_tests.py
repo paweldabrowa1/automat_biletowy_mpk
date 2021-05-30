@@ -55,7 +55,8 @@ class TestTicketMachineCase(unittest.TestCase):
         total = sum([a * key.value for key, a in rest])
         self.assertEqual(200.01 - 2, total)
 
-        self.assertEqual(self.tm.get_amount(self.c2), 110)
+        # 10 bazowo + 100 z placenia - 1 z wydania reszty
+        self.assertEqual(self.tm.get_amount(self.c2), 109)
         self.assertEqual(self.tm.get_amount(self.c01), 10)
 
         # powinien byc pusty
