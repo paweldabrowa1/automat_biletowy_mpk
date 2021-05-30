@@ -1,4 +1,11 @@
 class Ticket:
+    """
+    Basic ticket class
+    It comes with ticket:
+    - name eg.(20-minutowy)
+    - type eg.(ULGOWY)
+    - cost eg. 3.50
+    """
     def __init__(self, name, type, cost):
         self.__name = name
         self.__type = type

@@ -17,6 +17,7 @@ TICKETS_GEN = [
 
 
 class Runner:
+    """Main Automat Biletowy MPK running class"""
     def start_app(self):
         ticket_machine = TicketMachine(list(TICKETS_GEN))
 

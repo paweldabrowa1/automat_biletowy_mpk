@@ -1,8 +1,10 @@
 def acceptable_coins():
+    """Function returns basic required by project coins"""
     return (Coin(0.01 * 10 ** multiplier * coinsDeg) for multiplier in range(4) for coinsDeg in [1, 2, 5])
 
 
 class Coin:
+    """Basic coin class used as keys in most of dictionaries"""
     def __init__(self, value):
         self.value = value
 

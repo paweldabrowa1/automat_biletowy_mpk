@@ -4,10 +4,12 @@ from automat_biletowy_mpk.coins import CoinsHolder
 
 
 class NotEnoughCoinToPayForTicketsException(Exception):
+    """Thrown when someone is trying pay for tickets and amount in payment holder is smaller than ticket cost"""
     pass
 
 
 class NoCoinsToRefundException(Exception):
+    """Thrown when TicketMachine cannot return giveback the change"""
     pass
 
 
@@ -21,32 +23,41 @@ class TicketMachine(CoinsHolder):
         self.__payment_holder = PaymentCoinsHolder()
 
     def get_payment_holder(self):
+        """Returns payment holder"""
         return self.__payment_holder
 
     def get_tickets(self):
+        """Returns dictionary of tickets and their amounts"""
         return self.__tickets
 
     def set_chosen_amount(self, ticket, amount):
+        """Sets certain amount of ticket"""
         self.__tickets[ticket] = amount
 
     def sum_all_chosen_tickets_amount(self):
+        """Returns total amount of chosen tickets"""
         count = 0
         for ticket, amount in self.__tickets.items():
             count += amount
         return count
 
     def sum_all_chosen_tickets_cost(self):
+        """Returns total cost of chossen tickets"""
         cost_total = 0
         for ticket, amount in self.__tickets.items():
             cost_total += amount * ticket.cost()
         return cost_total
 
     def pay(self):
+        """Wrapper method for payment holder, used to payment for tickets"""
         return self.get_payment_holder()._pay(self)
 
 
 class PaymentCoinsHolder(CoinsHolder):
+    """Each ticket machine have payment holder (CoinsHolder) which is used to holds users coins entered to ticket
+    machine """
     def _pay(self, refund_holder: TicketMachine):
+        """Main payment holder method for checking giveback change possibility"""
         total = self.sum_all_coins_value()
         tickets_cost = refund_holder.sum_all_chosen_tickets_cost()
         rest = total - tickets_cost
